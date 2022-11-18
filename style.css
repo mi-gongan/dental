@@ -1,0 +1,32 @@
+body{
+    background: white
+}
+
+.tooth-chart{
+    width:450px;
+}
+.layout{
+    display: flex;
+}
+.left{
+    flex:1;
+    text-align: center;
+}
+.right{
+    flex:1;
+}
+#logo{
+    padding-top: 100px;
+}
+
+
+
+/*#Spots{*/
+/*    polygon, path{*/
+/*        -webkit-transition:fill .25s;*/
+/*        transition:fill .25s;*/
+/*    }*/
+/*    polygon:hover, polygon:active, path:hover, path:active{*/
+/*    fill:#dddddd !important;*/
+/*    }*/
+/*}*/
