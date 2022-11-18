@@ -1,5 +1,6 @@
 body{
-    background: white
+    background: rgba(0, 139, 139, 0.2);
+    min-width: 1200px;
 }
 
 .tooth-chart{
@@ -8,9 +9,54 @@ body{
 .layout{
     display: flex;
 }
+#voice{
+    padding-top: 20px;
+}
+#voice-title{
+    font-size:24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
 .left{
     flex:1;
     text-align: center;
+    margin:0px auto;
+}
+#color-description{
+    border: 2px solid gray;
+    border-radius:10px ;
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    padding:10px 20px 5px 0px;
+    margin:80px auto 0px auto;
+}
+.description{
+    height: 60px;
+    margin: 5px 20px;
+    display:flex;
+    align-items: center;
+;
+}
+.color-box{
+    width: 40px;
+    height: 40px;
+    border-radius:50% ;
+    margin:10px;
+}
+.color-text{
+    display: flex;
+    margin:10px;
+
+}
+#royalblue{
+    background-color: royalblue;
+}
+#orangered{
+    background-color: orangered;
+}
+#cadetblue{
+    background-color: cadetblue;
 }
 .right{
     flex:1;

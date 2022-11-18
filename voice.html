@@ -19,7 +19,7 @@
                     interim_transcript += event.results[i][0].transcript;
                 }
             }
-            document.getElementById('result').innerHTML =  '중간값:='+interim_transcript+'<br/>결과값='+final_transcript;
+            document.getElementById('result').innerHTML =final_transcript;
             for(let i=0;i<32;i++){
                 if(final_transcript.split("번")[0]==i){
                     let toothColor;
@@ -39,12 +39,28 @@
 </head>
 <div class="layout">
     <div class="left">
-        <img alt="logo" src="img/KakaoTalk_Photo_2022-11-18-23-57-03.jpeg" width="400" id="logo"/>
+        <img alt="logo" src="img/logo.png" width="400" id="logo"/>
         <br/>
-        <div>한국어 음성 처리 테스트</div>
-        <br/>
-        <div id='result'>
-            결과가 없습니다.
+        <div id="voice">
+            <div id="voice-title">인식된 음성</div>
+            <br/>
+            <div id='result'>
+                결과가 없습니다.
+            </div>
+        </div>
+        <div id="color-description">
+            <div class="description">
+                <div class="color-box" id="royalblue"></div>
+                <div class="color-text">레진, 크라운, 인레이</div>
+            </div>
+            <div class="description">
+                <div class="color-box" id="orangered"></div>
+                <div class="color-text">마모, 교모, 우식</div>
+            </div>
+            <div class="description">
+                <div class="color-box" id="cadetblue"></div>
+                <div class="color-text">그 외</div>
+            </div>
         </div>
     </div>
     <div class="right">
